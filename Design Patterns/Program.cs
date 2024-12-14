@@ -1,4 +1,5 @@
 ﻿using Design_Patterns.BuilderPattern;
+using Design_Patterns.StrategyPattern;
 
 namespace Design_Patterns
 {
@@ -6,13 +7,23 @@ namespace Design_Patterns
     {
         static void Main(string[] args)
         {
+            //chain of responsibility
+
             //var handleOne = new HandleOne();
             //var y = handleOne.Handle("person one");
             //Console.WriteLine(y);
-            var builder = new CarBuilder();
-            var x = ConstructorClass.Constructor(builder);
-            Console.WriteLine(x.ToString());
 
+            //builder
+
+            //var builder = new CarBuilder();
+            //var x = ConstructorClass.Constructor(builder);
+            //Console.WriteLine(x.ToString());
+
+            //StrategyPattern
+            var s = new MyStartegyPattern();
+            s.SetStrategy(new ConcreteStrategyOne());
+            var x = s.DoAlgorithm(1, 2);
+            Console.WriteLine(x.ToString());
         }
     }
 }
