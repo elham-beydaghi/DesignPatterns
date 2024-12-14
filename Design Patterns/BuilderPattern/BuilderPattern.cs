@@ -2,9 +2,9 @@
 {
     public interface ICarBuilder
     {
-        public ICarBuilder SetColor(string color);
-        public ICarBuilder SetName(string name);
-        public ICarBuilder SetDate(DateTime date);
+        ICarBuilder SetColor(string color);
+        ICarBuilder SetName(string name);
+        ICarBuilder SetDate(DateTime date);
 
     }
 
@@ -29,7 +29,8 @@
     public class CarBuilder : ICarBuilder
     {
         private readonly Car carInstatnce;
-        public CarBuilder() { 
+        public CarBuilder()
+        {
             carInstatnce = new Car();
         }
         public ICarBuilder SetColor(string color)
@@ -46,7 +47,7 @@
 
         public ICarBuilder SetName(string name)
         {
-            carInstatnce.Name = name; 
+            carInstatnce.Name = name;
             return this;
         }
     }

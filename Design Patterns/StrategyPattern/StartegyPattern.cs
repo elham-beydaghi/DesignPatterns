@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Design_Patterns.StrategyPattern
 {
-    internal class StartegyPattern
+    public interface IStrategy
+    {
+        public void 
+    }
+    public class StartegyPattern
     {
     }
 }
