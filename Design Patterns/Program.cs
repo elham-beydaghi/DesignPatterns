@@ -1,4 +1,5 @@
 ﻿using Design_Patterns.BuilderPattern;
+using Design_Patterns.ObserverPattern;
 using Design_Patterns.StrategyPattern;
 
 namespace Design_Patterns
@@ -20,10 +21,21 @@ namespace Design_Patterns
             //Console.WriteLine(x.ToString());
 
             //StrategyPattern
-            var s = new MyStartegyPattern();
-            s.SetStrategy(new ConcreteStrategyOne());
-            var x = s.DoAlgorithm(1, 2);
-            Console.WriteLine(x.ToString());
+
+            //var s = new MyStartegyPattern();
+            //s.SetStrategy(new ConcreteStrategyOne());
+            //var x = s.DoAlgorithm(1, 2);
+            //Console.WriteLine(x.ToString());
+
+            //observer
+
+            //var obs = new ConcereteObservable();
+            //obs.Add(new ConcreteObserver(obs));
+            //obs.Add(new ConcreteObserver(obs));
+            //obs.Setcount(1);
+            //obs.Notify();
+
+            
         }
     }
 }
