@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="FactoryPattern\" />
+    <Folder Include="SingletonPattern\" />
   </ItemGroup>
 
 </Project>

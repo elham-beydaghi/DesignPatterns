@@ -1,4 +1,6 @@
 ﻿using Design_Patterns.BuilderPattern;
+using Design_Patterns.CommandPattern;
+using Design_Patterns.FactoryPattern;
 using Design_Patterns.ObserverPattern;
 using Design_Patterns.StrategyPattern;
 
@@ -35,6 +37,20 @@ namespace Design_Patterns
             //obs.Setcount(1);
             //obs.Notify();
 
+            //Factory
+
+            //var p = new ConcreteFactory();
+            //var x = p.CreateProduct();
+            //Console.WriteLine(x);
+
+            //Abstract factory
+            //var p = new ConcreteAbstractFactoryA();
+            //p.CreateProductB();
+            //p.CreateProductA();
+
+            //Command Pattern
+            //var p = new Invoker(new TurningOnCommander(new Lamp()), new TurningOffCommander(new Lamp()));
+            //p.ClickBlackButton();
             
         }
     }
