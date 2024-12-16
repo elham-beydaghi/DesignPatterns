@@ -1,5 +1,7 @@
-﻿using Design_Patterns.BuilderPattern;
+﻿using Design_Patterns.AdapaterPattern;
+using Design_Patterns.BuilderPattern;
 using Design_Patterns.CommandPattern;
+using Design_Patterns.FacadePattern;
 using Design_Patterns.FactoryPattern;
 using Design_Patterns.ObserverPattern;
 using Design_Patterns.StrategyPattern;
@@ -52,6 +54,13 @@ namespace Design_Patterns
             //var p = new Invoker(new TurningOnCommander(new Lamp()), new TurningOffCommander(new Lamp()));
             //p.ClickBlackButton();
             
+            //Adapter pattern
+            //IAdapater adapater = new ConcreteAdapter(new Adaptee());
+            //adapater.RequestedMethod();
+
+            //Facade Pattern
+            //var p = new FacadePatternClass(new SubSystemOne(), new SubSystemTwo());
+            //p.DoOperation();
         }
     }
 }
