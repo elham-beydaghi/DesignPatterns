@@ -4,6 +4,7 @@ using Design_Patterns.CommandPattern;
 using Design_Patterns.FacadePattern;
 using Design_Patterns.FactoryPattern;
 using Design_Patterns.ObserverPattern;
+using Design_Patterns.ProxyPattern;
 using Design_Patterns.StrategyPattern;
 
 namespace Design_Patterns
@@ -53,7 +54,7 @@ namespace Design_Patterns
             //Command Pattern
             //var p = new Invoker(new TurningOnCommander(new Lamp()), new TurningOffCommander(new Lamp()));
             //p.ClickBlackButton();
-            
+
             //Adapter pattern
             //IAdapater adapater = new ConcreteAdapter(new Adaptee());
             //adapater.RequestedMethod();
@@ -61,6 +62,10 @@ namespace Design_Patterns
             //Facade Pattern
             //var p = new FacadePatternClass(new SubSystemOne(), new SubSystemTwo());
             //p.DoOperation();
+
+            //Proxy Pattern
+            //var p = new ProxyClass();
+            //Console.WriteLine(p.GetThePrice("Strawberry"));
         }
     }
 }
